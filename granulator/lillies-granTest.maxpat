@@ -40,18 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-81",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 728.0, 21.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-79",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -65,15 +53,28 @@
 , 			{
 				"box" : 				{
 					"basictuning" : 440,
+					"clipheight" : 32.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "Macintosh HD:/Users/alexvangils/waterlillies/waterlillies-mockup/media/Sample - Water Lilies 4.wav",
-								"filename" : "Sample - Water Lilies 4.wav",
+								"absolutepath" : "sacre.aiff",
+								"filename" : "sacre.aiff",
 								"filekind" : "audiofile",
-								"id" : "u713002937",
+								"id" : "u864003225",
+								"selection" : [ 0.138297872340426, 0.691489361702128 ],
 								"loop" : 0,
 								"content_state" : 								{
-									"loop" : 0
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "rainstick.aif",
+								"filename" : "rainstick.aif",
+								"filekind" : "audiofile",
+								"id" : "u647002692",
+								"loop" : 0,
+								"content_state" : 								{
+
 								}
 
 							}
@@ -91,7 +92,7 @@
 					"originaltempo" : 120.0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 722.0, 67.0, 150.0, 30.0 ],
+					"patching_rect" : [ 722.0, 34.5, 218.533333333333303, 66.0 ],
 					"pitchcorrection" : 0,
 					"quality" : "basic",
 					"timestretch" : [ 0 ]
@@ -914,7 +915,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "trackerWidth", 2 ], [ "showTriangles", 0 ], [ "bgColor", 1, 1, 1, 0 ], [ "chan", 0 ], [ "triangleColor", 1, 1, 1, 1 ], [ "waveformColor", 0.1, 0.1, 0.1, 1 ], [ "mode", 0 ], [ "dotColorSecondary", 0.5, 0, 0, 0.9 ], [ "selection", 0, 1 ], [ "triangleOutColor", 1, 1, 1, 1 ], [ "displayRange", 0, 1 ], [ "dotScale", 1 ], [ "buffername", "lilliesGran" ], [ "fps", 30 ], [ "dotColor", 1, 0, 0, 0.9 ], [ "trackerColor", 0.9, 0.9, 0.9, 0.75 ], [ "dotVJitter", 0 ], [ "maxBufferDrawSamples", 1920 ], [ "selectColor", 1, 1, 1, 0.75 ] ],
+					"embedstate" : [ [ "chan", 0 ], [ "maxBufferDrawSamples", 1920 ], [ "trackerWidth", 2 ], [ "waveformColor", 0.1, 0.1, 0.1, 1 ], [ "showTriangles", 0 ], [ "bgColor", 1, 1, 1, 0 ], [ "dotColor", 1, 0, 0, 0.9 ], [ "fps", 30 ], [ "selection", 0, 1 ], [ "triangleColor", 1, 1, 1, 1 ], [ "dotColorSecondary", 0.5, 0, 0, 0.9 ], [ "mode", 0 ], [ "triangleOutColor", 1, 1, 1, 1 ], [ "dotScale", 1 ], [ "buffername", "lilliesGran" ], [ "trackerColor", 0.9, 0.9, 0.9, 0.75 ], [ "displayRange", 0, 1 ], [ "selectColor", 1, 1, 1, 0.75 ], [ "dotVJitter", 0 ] ],
 					"filename" : "grainflow.waveform~",
 					"id" : "obj-26",
 					"maxclass" : "jsui",
@@ -1436,13 +1437,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-78", 0 ],
-					"source" : [ "obj-81", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-35", 1 ],
 					"source" : [ "obj-9", 0 ]
 				}
@@ -1467,13 +1461,6 @@
 		"dependency_cache" : [ 			{
 				"name" : "N_rev~.mxo",
 				"type" : "iLaX"
-			}
-, 			{
-				"name" : "Sample - Water Lilies 4.wav",
-				"bootpath" : "~/waterlillies/waterlillies-mockup/media",
-				"patcherrelativepath" : "../waterlillies-mockup/media",
-				"type" : "WAVE",
-				"implicit" : 1
 			}
 , 			{
 				"name" : "_grainflow.poly.maxpat",
@@ -1515,6 +1502,18 @@
 				"bootpath" : "~/Documents/Max 8/Packages/Grainflow/patchers",
 				"patcherrelativepath" : "../../Documents/Max 8/Packages/Grainflow/patchers",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "rainstick.aif",
+				"bootpath" : "C74:/media/msp",
+				"type" : "AIFF",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sacre.aiff",
+				"bootpath" : "C74:/docs/tutorial-patchers/msp-tut",
+				"type" : "AIFF",
 				"implicit" : 1
 			}
  ],
