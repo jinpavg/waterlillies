@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 325.0, 630.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-55",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -133,8 +145,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 321.0, 674.0, 119.0, 22.0 ],
-					"text" : "qmetro 50 @active 1"
+					"patching_rect" : [ 321.0, 674.0, 63.0, 22.0 ],
+					"text" : "qmetro 50"
 				}
 
 			}
@@ -809,7 +821,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "dotColor", 1, 0, 0, 0.9 ], [ "trackerColor", 0.9, 0.9, 0.9, 0.75 ], [ "dotColorSecondary", 0.5, 0, 0, 0.9 ], [ "selectColor", 1, 1, 1, 0.75 ], [ "buffername", "lilliesGran" ], [ "maxBufferDrawSamples", 1920 ], [ "trackerWidth", 2 ], [ "dotScale", 1 ], [ "displayRange", 0, 1 ], [ "bgColor", 1, 1, 1, 0 ], [ "selection", 0, 1 ], [ "mode", 0 ], [ "dotVJitter", 0 ], [ "triangleColor", 1, 1, 1, 1 ], [ "waveformColor", 0.1, 0.1, 0.1, 1 ], [ "chan", 0 ], [ "fps", 30 ], [ "showTriangles", 0 ], [ "triangleOutColor", 1, 1, 1, 1 ] ],
+					"embedstate" : [ [ "showTriangles", 0 ], [ "bgColor", 1, 1, 1, 0 ], [ "chan", 0 ], [ "dotColor", 1, 0, 0, 0.9 ], [ "mode", 0 ], [ "triangleColor", 1, 1, 1, 1 ], [ "dotColorSecondary", 0.5, 0, 0, 0.9 ], [ "triangleOutColor", 1, 1, 1, 1 ], [ "dotScale", 1 ], [ "trackerColor", 0.9, 0.9, 0.9, 0.75 ], [ "displayRange", 0, 1 ], [ "buffername", "lilliesGran" ], [ "selectColor", 1, 1, 1, 0.75 ], [ "dotVJitter", 0 ], [ "maxBufferDrawSamples", 1920 ], [ "fps", 30 ], [ "trackerWidth", 2 ], [ "waveformColor", 0.1, 0.1, 0.1, 1 ], [ "selection", 0, 1 ] ],
 					"filename" : "grainflow.waveform~",
 					"id" : "obj-26",
 					"maxclass" : "jsui",
@@ -990,6 +1002,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 0 ],
+					"source" : [ "obj-34", 0 ]
 				}
 
 			}
@@ -1202,13 +1221,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"source" : [ "obj-6", 1 ]
 				}
 
 			}
