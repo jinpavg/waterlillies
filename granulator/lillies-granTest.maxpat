@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 363.0, 94.0, 1453.0, 1234.0 ],
+		"rect" : [ 1026.0, 193.0, 1453.0, 1234.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,19 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 366.0, 442.0, 212.0, 35.0 ],
+					"text" : "/Users/alexvangils/waterlillies/waterlillies/patchers/lil-granulator.maxpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-62",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -47,18 +60,6 @@
 					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 660.0, 339.0, 60.0, 22.0 ],
 					"text" : "mc.pack~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-61",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 1,
-					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 355.0, 438.0, 75.0, 22.0 ],
-					"text" : "lil-granulator"
 				}
 
 			}
@@ -80,13 +81,13 @@
 
 							}
 , 							{
-								"absolutepath" : "rainstick.aif",
-								"filename" : "rainstick.aif",
+								"absolutepath" : "/Users/alexvangils/Downloads/Big snore.m4a",
+								"filename" : "Big snore.m4a",
 								"filekind" : "audiofile",
-								"id" : "u647002692",
-								"loop" : 1,
+								"id" : "u312006134",
+								"loop" : 0,
 								"content_state" : 								{
-									"loop" : 1
+
 								}
 
 							}
@@ -188,14 +189,30 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-61", 0 ],
+					"destination" : [ "obj-21", 0 ],
+					"order" : 1,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-55", 0 ],
+					"order" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-61", 1 ],
+					"destination" : [ "obj-1", 1 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -209,23 +226,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"order" : 1,
-					"source" : [ "obj-61", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-55", 0 ],
-					"order" : 0,
-					"source" : [ "obj-61", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-61", 2 ],
+					"destination" : [ "obj-1", 2 ],
 					"source" : [ "obj-62", 0 ]
 				}
 
@@ -253,8 +254,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-61::obj-18" : [ "mc.live.gain~[1]", "mc.live.gain~", 0 ],
-			"obj-61::obj-31" : [ "number[1]", "number[4]", 0 ],
+			"obj-1::obj-18" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
+			"obj-1::obj-31" : [ "number[4]", "number[4]", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -264,20 +265,20 @@
 
 			}
 ,
-			"parameter_overrides" : 			{
-				"obj-61::obj-18" : 				{
-					"parameter_longname" : "mc.live.gain~[1]"
-				}
-
-			}
-,
 			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "Big snore.m4a",
+				"bootpath" : "~/Downloads",
+				"patcherrelativepath" : "../../Downloads",
+				"type" : "M4a",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "_grainflow.poly.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Grainflow/patchers/_private",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/Grainflow/patchers/_private",
+				"bootpath" : "~/waterlillies/waterlillies/patchers",
+				"patcherrelativepath" : "../waterlillies/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -297,8 +298,8 @@
 			}
 , 			{
 				"name" : "grainflow.util.record~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Grainflow/patchers/util",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/Grainflow/patchers/util",
+				"bootpath" : "~/waterlillies/waterlillies/patchers",
+				"patcherrelativepath" : "../waterlillies/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -311,22 +312,16 @@
 			}
 , 			{
 				"name" : "grainflow~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Grainflow/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/Grainflow/patchers",
+				"bootpath" : "~/waterlillies/waterlillies/patchers",
+				"patcherrelativepath" : "../waterlillies/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "lil-granulator.maxpat",
-				"bootpath" : "~/waterlillies/waterlillies-mockup",
-				"patcherrelativepath" : "../waterlillies-mockup",
+				"bootpath" : "~/waterlillies/waterlillies/patchers",
+				"patcherrelativepath" : "../waterlillies/patchers",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rainstick.aif",
-				"bootpath" : "C74:/media/msp",
-				"type" : "AIFF",
 				"implicit" : 1
 			}
 , 			{
