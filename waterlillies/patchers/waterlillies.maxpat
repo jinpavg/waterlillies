@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 212.0, 87.0, 1232.0, 929.0 ],
+		"rect" : [ 212.0, 87.0, 734.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,90 @@
 		"assistshowspatchername" : 0,
 		"title" : "Waterlillies",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-178",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1208.0, 875.611632999999983, 150.0, 33.0 ],
+					"text" : "will send pan ramp from end"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-149",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 778.0, 373.0, 110.0, 22.0 ],
+					"text" : "r playFloatingTrack"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-101",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 726.0, 361.0, 29.5, 22.0 ],
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-70",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1233.0, 987.611632999999983, 71.0, 22.0 ],
+					"text" : "s globalPan"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-43",
+					"maxclass" : "multislider",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1208.0, 987.611632999999983, 21.0, 162.0 ],
+					"setminmax" : [ 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1208.0, 915.611632999999983, 182.0, 22.0 ],
+					"text" : "0.5 500 0.5 1000 0. 7000 1 7000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"patching_rect" : [ 1208.0, 945.611632999999983, 41.0, 22.0 ],
+					"text" : "line 0."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-175",
 					"maxclass" : "newobj",
@@ -343,7 +427,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 451.0, 699.0, 920.0, 606.0 ],
+						"rect" : [ 578.0, 182.0, 920.0, 606.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -389,7 +473,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 466.0, 601.0, 640.0, 480.0 ],
+										"rect" : [ 935.0, 368.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -417,7 +501,43 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
+										"visible" : 1,
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-5",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 198.0, 223.0, 112.0, 22.0 ],
+													"text" : "s playFloatingTrack"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-4",
+													"maxclass" : "button",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "bang" ],
+													"parameter_enable" : 0,
+													"patching_rect" : [ 192.0, 187.0, 24.0, 24.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-2",
+													"maxclass" : "newobj",
+													"numinlets" : 4,
+													"numoutlets" : 4,
+													"outlettype" : [ "bang", "bang", "bang", "" ],
+													"patching_rect" : [ 185.0, 146.0, 54.0, 22.0 ],
+													"text" : "sel 1 2 3"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-1",
@@ -431,7 +551,28 @@
 
 											}
  ],
-										"lines" : [  ]
+										"lines" : [ 											{
+												"patchline" : 												{
+													"destination" : [ "obj-2", 0 ],
+													"source" : [ "obj-1", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-4", 0 ],
+													"source" : [ "obj-2", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-5", 0 ],
+													"source" : [ "obj-4", 0 ]
+												}
+
+											}
+ ]
 									}
 ,
 									"patching_rect" : [ 316.0, 525.0, 117.0, 22.0 ],
@@ -491,7 +632,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-11",
@@ -1279,7 +1419,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-6",
@@ -2044,7 +2183,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1870.0, 1014.0, 927.0, 480.0 ],
+										"rect" : [ 134.0, 159.0, 927.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -2072,7 +2211,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-20",
@@ -3193,7 +3331,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 510.0, 150.888367000000017, 50.0, 22.0 ],
-									"text" : "60"
+									"text" : "3"
 								}
 
 							}
@@ -3251,7 +3389,7 @@
 											}
 , 											{
 												"key" : 9,
-												"value" : [ 0 ]
+												"value" : [ 3 ]
 											}
  ]
 									}
@@ -3288,7 +3426,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1797.0, 952.0, 640.0, 480.0 ],
+										"rect" : [ 134.0, 159.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -3475,7 +3613,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1797.0, 952.0, 640.0, 480.0 ],
+										"rect" : [ 134.0, 159.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -3503,7 +3641,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-3",
@@ -19010,9 +19147,20 @@
 , 			{
 				"box" : 				{
 					"basictuning" : 440,
-					"clipheight" : 34.931931808842201,
+					"clipheight" : 36.966183436605391,
 					"data" : 					{
 						"clips" : [ 							{
+								"absolutepath" : "/Users/alexvangils/waterlillies/waterlillies/media/(water lilies floating) [after Donna Masini].wav",
+								"filename" : "(water lilies floating) [after Donna Masini].wav",
+								"filekind" : "audiofile",
+								"id" : "u539011122",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
 								"absolutepath" : "Water Lilies 2.wav",
 								"filename" : "Water Lilies 2.wav",
 								"filekind" : "audiofile",
@@ -19103,7 +19251,7 @@
 					"originaltempo" : 120.0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 559.0, 478.58811033810457, 228.0, 251.523522661895413 ],
+					"patching_rect" : [ 559.0, 412.914459345261321, 236.0, 303.729467492843128 ],
 					"pitchcorrection" : 0,
 					"presentation" : 1,
 					"presentation_rect" : [ 223.5, 76.0, 153.0, 54.948387096774212 ],
@@ -19330,7 +19478,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 559.0, 433.0, 150.0, 22.0 ]
+					"patching_rect" : [ 559.0, 361.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -19372,6 +19520,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-97", 0 ],
 					"source" : [ "obj-100", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-101", 0 ]
 				}
 
 			}
@@ -19614,6 +19769,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-101", 0 ],
+					"source" : [ "obj-149", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"order" : 1,
 					"source" : [ "obj-15", 0 ]
@@ -19730,6 +19892,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-122", 0 ],
 					"source" : [ "obj-177", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"order" : 1,
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"order" : 0,
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -20179,6 +20357,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-37", 0 ]
 				}
 
 			}
@@ -20641,6 +20826,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "(water lilies floating) [after Donna Masini].wav",
+				"bootpath" : "~/waterlillies/waterlillies/media",
+				"patcherrelativepath" : "../media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "N_rev~.mxo",
 				"type" : "iLaX"
 			}
