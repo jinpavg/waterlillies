@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1825.0, 217.0, 1133.0, 1456.0 ],
+		"rect" : [ 1615.0, 139.0, 1133.0, 1456.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 120.0, 281.0, 70.0, 22.0 ],
-					"text" : "loadmess 3"
+					"text" : "loadmess 1"
 				}
 
 			}
@@ -268,8 +268,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 321.0, 674.0, 63.0, 22.0 ],
-					"text" : "qmetro 50"
+					"patching_rect" : [ 321.0, 674.0, 126.0, 22.0 ],
+					"text" : "qmetro 100 @active 1"
 				}
 
 			}
@@ -944,7 +944,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "showTriangles", 0 ], [ "bgColor", 1, 1, 1, 0 ], [ "dotColor", 1, 0, 0, 0.9 ], [ "mode", 0 ], [ "triangleColor", 1, 1, 1, 1 ], [ "chan", 0 ], [ "dotColorSecondary", 0.5, 0, 0, 0.9 ], [ "triangleOutColor", 1, 1, 1, 1 ], [ "dotScale", 1 ], [ "selection", 0, 1 ], [ "trackerColor", 0.9, 0.9, 0.9, 0.75 ], [ "displayRange", 0, 1 ], [ "buffername", "lilliesGran" ], [ "selectColor", 1, 1, 1, 0.75 ], [ "dotVJitter", 0 ], [ "maxBufferDrawSamples", 1920 ], [ "trackerWidth", 2 ], [ "waveformColor", 0.1, 0.1, 0.1, 1 ], [ "fps", 30 ] ],
+					"embedstate" : [ [ "dotScale", 1 ], [ "trackerColor", 0.9, 0.9, 0.9, 0.75 ], [ "displayRange", 0, 1 ], [ "selectColor", 1, 1, 1, 0.75 ], [ "dotVJitter", 0 ], [ "maxBufferDrawSamples", 1920 ], [ "mode", 0 ], [ "trackerWidth", 2 ], [ "waveformColor", 0.1, 0.1, 0.1, 1 ], [ "chan", 0 ], [ "showTriangles", 0 ], [ "bgColor", 1, 1, 1, 0 ], [ "dotColor", 1, 0, 0, 0.9 ], [ "selection", 0, 1 ], [ "triangleColor", 1, 1, 1, 1 ], [ "buffername", "lilliesGran" ], [ "dotColorSecondary", 0.5, 0, 0, 0.9 ], [ "triangleOutColor", 1, 1, 1, 1 ], [ "fps", 30 ] ],
 					"filename" : "grainflow.waveform~",
 					"id" : "obj-26",
 					"maxclass" : "jsui",
