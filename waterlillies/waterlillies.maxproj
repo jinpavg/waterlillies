@@ -2,7 +2,7 @@
 	"name" : "waterlillies",
 	"version" : 1,
 	"creationdate" : 3740384548,
-	"modificationdate" : 3740396848,
+	"modificationdate" : 3748290534,
 	"viewrect" : [ 25.0, 106.0, 341.0, 507.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -50,5 +50,6 @@
 	"devpathtype" : 0,
 	"devpath" : ".",
 	"sortmode" : 0,
-	"viewmode" : 1
+	"viewmode" : 1,
+	"includepackages" : 0
 }
