@@ -1,4 +1,5 @@
-# waterlillies
+![lily](/icons/wl.ico) 
+# water lilies
 max project for the kurt rohde composition
 
 to get started, clone or download this repo, launch the `waterlillies.maxproj` \[sic\] from the [waterlillies directory](/waterlillies/).
