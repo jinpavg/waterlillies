@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1368.0, 929.0 ],
+		"rect" : [ 34.0, 87.0, 705.0, 774.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,7 +38,7 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
-		"title" : "Waterlillies",
+		"title" : "Waterlilies",
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontsize" : 26.356141937097664,
@@ -942,7 +942,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1676.0, 1323.0, 50.0, 22.0 ],
-					"text" : "139"
+					"text" : "120"
 				}
 
 			}
@@ -19923,8 +19923,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 6.0, 9.500000953674316, 152.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 81.5, 9.0, 331.0, 36.0 ],
-					"text" : "Water Lillies"
+					"presentation_rect" : [ 310.5, 9.0, 146.0, 36.0 ],
+					"text" : "Water Lilies"
 				}
 
 			}
