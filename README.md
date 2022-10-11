@@ -6,4 +6,4 @@ to get started, clone or download this repo, launch the `waterlillies.maxproj` \
 
 for video player setup, see [VIDEO.md](/video-player/VIDEO.md)
 
-created with appreciation for the excellent [grainflow Max package](https://github.com/composingcap/grainflow)
+created with appreciation and gratitude for the excellent [grainflow Max package](https://github.com/composingcap/grainflow)
